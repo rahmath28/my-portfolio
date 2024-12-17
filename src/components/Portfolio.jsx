@@ -179,7 +179,7 @@ const Portfolio = () => {
                   href={demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-auto sm:w-[25%] px-2 py-1 sm:px-6 sm:py-3 m-2 duration-200 hover:scale-105 flex items-center justify-center gap-2 border-2 border-gray-300 rounded-lg transform transition-transform  hover:shadow-lg hover:shadow-gray-600"
+                  className="w-auto sm:w-1/2 px-2 py-1 sm:px-6 sm:py-3 m-2 duration-200 hover:scale-105 flex items-center justify-center gap-2 border border-gray-300 sm:border-2 rounded-lg transform transition-transform hover:shadow-lg hover:shadow-gray-600"
                 >
                   <FaExternalLinkAlt /> Demo
                 </a>
@@ -187,7 +187,7 @@ const Portfolio = () => {
                   href={code}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-auto sm:w-[25%] px-2 py-1 sm:px-6 sm:py-3 m-2 duration-200 hover:scale-105 flex items-center justify-center gap-2 border-2 border-gray-300 rounded-lg transform transition-transform  hover:shadow-lg hover:shadow-gray-600"
+                  className="w-auto sm:w-1/2 px-2 py-1 sm:px-6 sm:py-3 m-2 duration-200 hover:scale-105 flex items-center justify-center gap-2 border border-gray-300 sm:border-2 rounded-lg transform transition-transform hover:shadow-lg hover:shadow-gray-600"
                 >
                   <FaGithub /> Code
                 </a>

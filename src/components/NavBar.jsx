@@ -63,7 +63,10 @@ const NavBar = () => {
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-white-500 z-10">
+        <ul
+          className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen 
+  bg-[url('bg-img.png')] bg-fill bg-center bg-black z-10"
+        >
           {links.map(({ id, link }) => (
             <li
               key={id}
@@ -74,7 +77,7 @@ const NavBar = () => {
                 to={link}
                 smooth
                 duration={500}
-                className="inline-block relative"
+                className="inline-block relative text-white"
               >
                 {link}
                 <span className="absolute bottom-0 left-0 h-0.5 bg-gray-500 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 w-full"></span>
