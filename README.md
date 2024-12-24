@@ -13,6 +13,7 @@ Welcome to my personal portfolio! This project showcases my skills, 10 projects,
 - **React.js**: Core framework for building the portfolio.  
 - **Tailwind CSS**: For rapid and responsive styling.  
 - **Framer Motion**: Used for smooth animations and transitions.
+- **Form Spree**: Used for handling form submissions and sending data to your email without a server.
 - **Vite**: Lightning-fast build tool and development server.  
 
 ## Live Demo  
