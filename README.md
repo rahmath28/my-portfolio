@@ -41,11 +41,11 @@ To run the portfolio locally:
 
 ## Project Structure
 /src: Contains the main source code.
+
 /public: Static assets like images and icons.
 
 ## Contact
 Feel free to reach out for collaborations or inquiries:
-Email: ashikibrahim7777@gmail.com
 LinkedIn: https://www.linkedin.com/in/ashik-ibrahim-s/
 
 ## License
