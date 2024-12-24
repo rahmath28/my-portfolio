@@ -26,18 +26,18 @@ To run the portfolio locally:
    git clone https://github.com/ashikibrahim07/portfolio.git
    ```
 2. Navigate to the project directory:
-  ```bash
-  cd portfolio
-  ```
+   ```bash
+   cd portfolio
+   ```
 3. Install dependencies:
-  ```bash
-  npm install
-  ```
+   ```bash
+   npm install
+   ```
 4. Start the development server:
-  ```bash
-  npm run dev
-  ```
-Open your browser and navigate to the local development URL provided by Vite (e.g., http://localhost:5173).
+   ```bash
+   npm run dev
+   ```
+5. Open your browser and navigate to the local development URL provided by Vite (e.g., http://localhost:5173).
 
 ## Project Structure
 /src: Contains the main source code.
