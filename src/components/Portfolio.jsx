@@ -56,7 +56,7 @@ const Portfolio = () => {
       src: use_popcorn,
       demo: "https://use-popcorn-navy.vercel.app/",
       code: "https://github.com/ashikibrahim07/use-popcorn",
-      technologies: ["React", "CSS"],
+      technologies: ["React", "CSS", "React Modal"],
     },
     {
       id: 4,
@@ -102,7 +102,7 @@ const Portfolio = () => {
       src: what_todo,
       demo: "https://what-todo-v1.vercel.app/",
       code: "https://github.com/ashikibrahim07/what-todo",
-      technologies: ["React", "CSS"],
+      technologies: ["React", "CSS", "Sweet Alert2"],
     },
     {
       id: 9,
