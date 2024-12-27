@@ -67,7 +67,7 @@ const Home = () => {
             className="flex justify-center space-x-4 mb-4"
           >
             <a
-              href="/Ashik_Ibrahim_React_Resume.pdf"
+              href="/Ashik_Ibrahim_React_Developer_Resume.pdf"
               target="_blank"
               className="relative inline-flex items-center justify-center p-1 mb-2 overflow-hidden text-sm font-medium text-white rounded-lg group border-2 border-[#2D2A6A] bg-transparent hover:bg-gradient-to-br hover:from-[#2D2A6A] hover:to-[#4B0082] hover:group-hover:from-[#3A3A8D] hover:group-hover:to-[#5B3A99] focus:outline-none"
             >

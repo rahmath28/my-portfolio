@@ -31,6 +31,8 @@ const Portfolio = () => {
     {
       id: 1,
       title: "Wild Oasis",
+      description:
+        "A nature-themed app for managing cabin bookings at a wildlife resort. It includes an admin dashboard for adding cabins, handling check-ins, and creating user accounts for employees.",
       src: wild_oasis,
       demo: "https://wild-oasis-by-ashik.vercel.app/",
       code: "https://github.com/ashikibrahim07/wild-oasis-by-ashik",
@@ -45,6 +47,8 @@ const Portfolio = () => {
     {
       id: 2,
       title: "Worldwise",
+      description:
+        "An interactive map that allows users to explore countries and their demographics. Users can click on countries to view detailed data and explore global information in a visually engaging way.",
       src: worldwise,
       demo: "https://world-wise-plum-psi.vercel.app/",
       code: "https://github.com/ashikibrahim07/world-wise",
@@ -53,6 +57,8 @@ const Portfolio = () => {
     {
       id: 3,
       title: "UsePopcorn",
+      description:
+        "A movie discovery app where users can browse movies, view detailed information, and check ratings. The app focuses on providing a seamless movie exploration experience.",
       src: use_popcorn,
       demo: "https://use-popcorn-navy.vercel.app/",
       code: "https://github.com/ashikibrahim07/use-popcorn",
@@ -61,6 +67,8 @@ const Portfolio = () => {
     {
       id: 4,
       title: "Book Store",
+      description:
+        "An online store for purchasing books with a fully functional cart and checkout system. It allows users to browse a wide selection of books and manage their purchases effortlessly.",
       src: book_store,
       demo: "https://online-book-store-frontend-beta.vercel.app/",
       code: "https://github.com/ashikibrahim07/book-app-frontend",
@@ -75,6 +83,8 @@ const Portfolio = () => {
     {
       id: 5,
       title: "Pizza Craft",
+      description:
+        "A pizza ordering website where users can customize and prioritize their pizzas. They can select different ingredients and create their personalized pizza with ease.",
       src: pizza_craft,
       demo: "https://pizza-craft.vercel.app/",
       code: "https://github.com/ashikibrahim07/pizza-craft",
@@ -83,6 +93,8 @@ const Portfolio = () => {
     {
       id: 6,
       title: "React IQ",
+      description:
+        "A fun quiz app that challenges users' IQ with various questions. The app features a timer and score tracker to make the quiz experience more interactive and competitive.",
       src: react_iq,
       demo: "https://react-iq-quiz.vercel.app/",
       code: "https://github.com/ashikibrahim07/react-iq-quiz-app",
@@ -91,6 +103,8 @@ const Portfolio = () => {
     {
       id: 7,
       title: "Prep Trip",
+      description:
+        "A trip planning application that helps users organize and track tasks related to their trips. It allows users to add, update, and monitor travel-related activities efficiently.",
       src: prep_trip,
       demo: "https://prep-trip.vercel.app/",
       code: "https://github.com/ashikibrahim07/prep-trip",
@@ -99,6 +113,8 @@ const Portfolio = () => {
     {
       id: 8,
       title: "What Todo",
+      description:
+        "A task management app designed to help users organize and prioritize their to-do lists. It includes notifications for reminders and an easy-to-use interface for managing daily tasks.",
       src: what_todo,
       demo: "https://what-todo-v1.vercel.app/",
       code: "https://github.com/ashikibrahim07/what-todo",
@@ -107,6 +123,8 @@ const Portfolio = () => {
     {
       id: 9,
       title: "Rep Set Go",
+      description:
+        "A workout tracker that allows users to log exercises, sets, and reps. It provides a simple way to monitor fitness progress and track performance over time.",
       src: rep_set_go,
       demo: "https://rep-set-go-beta.vercel.app/",
       code: "https://github.com/ashikibrahim07/RepSetGo",
@@ -115,6 +133,8 @@ const Portfolio = () => {
     {
       id: 10,
       title: "Facebook Lite Clone",
+      description:
+        "A lightweight replica of Facebook, featuring core functionalities like newsfeed, friend requests, messenger, and notifications. It is designed for fast performance and simplicity",
       src: fb_lite_clone,
       demo: "https://fb-lite-clone.netlify.app/",
       code: "https://github.com/ashikibrahim07/fb-lite-clone-using-html-css",
@@ -158,42 +178,50 @@ const Portfolio = () => {
           variants={containerVariant}
           viewport={{ once: true, amount: 0.05 }}
         >
-          {portfolios.map(({ id, src, title, demo, code, technologies }) => (
-            <motion.div
-              key={id}
-              className="shadow-md shadow-gray-600 rounded-lg"
-              variants={itemVariant}
-            >
-              <img
-                src={src}
-                alt={title}
-                className="rounded-t-md duration-200 hover:scale-105 h-auto"
-              />
+          {portfolios.map(
+            ({ id, src, title, demo, code, technologies, description }) => (
+              <motion.div
+                key={id}
+                className="shadow-md shadow-gray-600 rounded-lg"
+                variants={itemVariant}
+              >
+                <img
+                  src={src}
+                  alt={title}
+                  className="rounded-t-md duration-200 hover:scale-105 h-auto"
+                />
 
-              <h3 className="text-lg text-center mt-2 font-bold">{title}</h3>
-              <p className="text-center mt-2 text-sm">
-                {technologies.join(", ")}
-              </p>
-              <div className="flex flex-row items-center justify-center mt-2 gap-2">
-                <a
-                  href={demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-auto sm:w-1/2 px-2 py-1 sm:px-6 sm:py-3 m-2 duration-200 hover:scale-105 flex items-center justify-center gap-2 border border-gray-300 sm:border-2 rounded-lg transform transition-transform hover:shadow-lg hover:shadow-gray-600"
-                >
-                  <FaExternalLinkAlt /> Demo
-                </a>
-                <a
-                  href={code}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-auto sm:w-1/2 px-2 py-1 sm:px-6 sm:py-3 m-2 duration-200 hover:scale-105 flex items-center justify-center gap-2 border border-gray-300 sm:border-2 rounded-lg transform transition-transform hover:shadow-lg hover:shadow-gray-600"
-                >
-                  <FaGithub /> Code
-                </a>
-              </div>
-            </motion.div>
-          ))}
+                <h3 className="text-lg text-center mt-2 font-bold">{title}</h3>
+
+                <p className="text-center mt-2 text-sm sm:text-base text-gray-400 px-2">
+                  {description}
+                </p>
+
+                <p className="text-center mt-2 text-sm font-semibold text-white-500">
+                  {technologies.join(", ")}
+                </p>
+
+                <div className="flex flex-row items-center justify-center mt-2 gap-2">
+                  <a
+                    href={demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-auto sm:w-1/2 px-2 py-1 sm:px-6 sm:py-3 m-2 duration-200 hover:scale-105 flex items-center justify-center gap-2 border border-gray-300 sm:border-2 rounded-lg transform transition-transform hover:shadow-lg hover:shadow-gray-600"
+                  >
+                    <FaExternalLinkAlt /> Demo
+                  </a>
+                  <a
+                    href={code}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-auto sm:w-1/2 px-2 py-1 sm:px-6 sm:py-3 m-2 duration-200 hover:scale-105 flex items-center justify-center gap-2 border border-gray-300 sm:border-2 rounded-lg transform transition-transform hover:shadow-lg hover:shadow-gray-600"
+                  >
+                    <FaGithub /> Code
+                  </a>
+                </div>
+              </motion.div>
+            )
+          )}
         </motion.div>
       </div>
     </div>
