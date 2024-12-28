@@ -1,30 +1,27 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaArrowUp } from "react-icons/fa6";
-import { Link } from "react-scroll";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 
 const Footer = () => {
-  const [isFooterVisible, setIsFooterVisible] = useState(false);
-  const footerRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
 
+  // Track scroll position
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsFooterVisible(entry.isIntersecting);
-      },
-      { threshold: 0.1 }
-    );
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        // Show the button after scrolling 200px
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
 
-    if (footerRef.current) {
-      observer.observe(footerRef.current);
-    }
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      if (footerRef.current) {
-        observer.unobserve(footerRef.current);
-      }
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -37,24 +34,25 @@ const Footer = () => {
 
   return (
     <div>
-      {isFooterVisible && (
-        <motion.button
-          onClick={handleScrollToTop}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className="fixed bottom-8 right-8 text-white p-2 sm:p-3 md:p-4 rounded-full shadow-md group bg-gradient-to-br from-[#2D2A6A] to-[#4B0082] group-hover:from-[#3A3A8D] group-hover:to-[#5B3A99] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
-          aria-label="Back to Top"
-          data-tooltip-id="scroll-to-top"
-          data-tooltip-content="Scroll to Top"
-        >
-          <FaArrowUp size={20} className="sm:size-[18px] md:size-[23px]" />
-        </motion.button>
-      )}
-      <Tooltip id="scroll-to-top" place="top" effect="solid" />{" "}
-      <footer
-        ref={footerRef}
-        className="text-white text-center py-4 sm:text-lg text-sm"
+      <motion.button
+        onClick={handleScrollToTop}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        className="fixed bottom-8 right-8 text-white p-3 rounded-full shadow-md bg-gradient-to-br from-[#2D2A6A] to-[#4B0082] group-hover:from-[#3A3A8D] group-hover:to-[#5B3A99] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
+        aria-label="Back to Top"
+        data-tooltip-id="scroll-to-top"
+        data-tooltip-content="Scroll to Top"
+        style={{
+          opacity: isVisible ? 1 : 0,
+          transform: isVisible ? "translateY(0)" : "translateY(30px)",
+          transition: "opacity 0.3s ease, transform 0.3s ease",
+        }}
       >
+        <FaArrowUp size={20} />
+      </motion.button>
+
+      <Tooltip id="scroll-to-top" place="top" effect="solid" />
+      <footer className="text-white text-center py-4 sm:text-lg text-sm">
         <p>
           Coded in <span className="font-bold">Visual Studio Code</span>. Built
           with <span className="font-bold">React.js</span>,{" "}
@@ -64,10 +62,7 @@ const Footer = () => {
         </p>
         <p className="mt-2">
           Crafted with care by{" "}
-          <Link to="home" smooth duration={500}>
-            <span className="font-bold cursor-pointer">Ashik Ibrahim</span>
-          </Link>
-          .
+          <span className="font-bold cursor-pointer">Ashik Ibrahim</span>.
         </p>
       </footer>
     </div>

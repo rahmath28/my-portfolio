@@ -11,6 +11,58 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4b0082;
+  border-radius: 8px;
+  border: 2px solid #2d2a6a;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6a0dad;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #4b0082 #1a1a1a;
+}
+
+@keyframes bounce200 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes bounce400 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-bounce200 {
+  animation: bounce200 1s infinite;
+}
+
+.animate-bounce400 {
+  animation: bounce400 1.5s infinite;
+}
+
 @media (max-width: 320px) {
   .experience-container {
     width: 100%;

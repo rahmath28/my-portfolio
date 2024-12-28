@@ -21,73 +21,73 @@ const Experience = () => {
       id: 1,
       src: html,
       title: "HTML",
-      style: "shadow-orange-600",
+      style: "shadow-gray-500 hover:shadow-orange-600",
     },
     {
       id: 2,
       src: css,
       title: "CSS",
-      style: "shadow-blue-500",
+      style: "shadow-gray-500 hover:shadow-blue-500",
     },
     {
       id: 3,
       src: javascript,
       title: "JavaScript",
-      style: "shadow-yellow-400",
+      style: "shadow-gray-500 hover:shadow-yellow-400",
     },
     {
       id: 4,
       src: reactImage,
       title: "React",
-      style: "shadow-sky-500",
+      style: "shadow-gray-500 hover:shadow-sky-500",
     },
     {
       id: 5,
       src: tailwind,
       title: "Tailwind",
-      style: "shadow-sky-400",
+      style: "shadow-gray-500 hover:shadow-sky-400",
     },
     {
       id: 6,
       src: redux,
       title: "Redux",
-      style: "shadow-purple-600",
+      style: "shadow-gray-500 hover:shadow-purple-600",
     },
     {
       id: 7,
       src: react_query,
       title: "React Query",
-      style: "shadow-red-600",
+      style: "shadow-gray-500 hover:shadow-red-600",
     },
     {
       id: 8,
       src: github,
       title: "GitHub",
-      style: "shadow-gray-400",
+      style: "shadow-gray-500 hover:shadow-gray-400",
     },
     {
       id: 9,
       src: node,
       title: "Node",
-      style: "shadow-lime-500",
+      style: "shadow-gray-500 hover:shadow-lime-500",
     },
     {
       id: 10,
       src: expressJS,
       title: "Express JS",
-      style: "shadow-white",
+      style: "shadow-gray-500 hover:shadow-white",
     },
     {
       id: 11,
       src: postgresql,
       title: "PostgreSQL",
-      style: "shadow-blue-500",
+      style: "shadow-gray-500 hover:shadow-blue-500",
     },
     {
       id: 12,
       src: mongodb,
       title: "MongoDB",
-      style: "shadow-green-600",
+      style: "shadow-gray-500 hover:shadow-green-600",
     },
   ];
 
@@ -103,7 +103,10 @@ const Experience = () => {
   };
 
   return (
-    <div name="experience" className="w-full min-h-screen mt-8 text-center ">
+    <div
+      name="experience"
+      className="w-full min-h-screen mt-8 text-center cursor-pointer"
+    >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <motion.div
           ref={ref}
@@ -131,7 +134,7 @@ const Experience = () => {
                   transition: { duration: 0.3 },
                 },
               }}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style} transition-shadow`}
             >
               <img src={src} alt={title} className="w-20 mx-auto" />
               <p className="mt-4">{title}</p>
