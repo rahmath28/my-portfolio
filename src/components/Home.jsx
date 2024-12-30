@@ -1,5 +1,4 @@
 import React from "react";
-
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
@@ -72,6 +71,7 @@ const Home = () => {
               className="relative inline-flex items-center justify-center p-1 mb-2 overflow-hidden text-sm font-medium text-white rounded-lg group 
     border-2 border-[#2D2A6A] bg-gradient-to-br from-[#2D2A6A] to-[#4B0082] 
     focus:outline-none"
+              aria-label="Download Ashik Ibrahim's Resume"
             >
               <span className="relative px-4 py-2 transition-all ease-in duration-75 bg-transparent rounded-md group-hover:bg-opacity-0 flex items-center">
                 Resume
@@ -88,6 +88,7 @@ const Home = () => {
               className="relative inline-flex items-center justify-center p-1 mb-2 overflow-hidden text-sm font-medium text-white rounded-lg group 
       border-2 border-[#2D2A6A] bg-transparent 
       hover:bg-gradient-to-br hover:from-[#2D2A6A] hover:to-[#4B0082] hover:text-white focus:outline-none cursor-pointer transition-all duration-300 ease-in-out"
+              aria-label="Go to portfolio section"
             >
               <span className="relative px-4 py-2 transition-all ease-in duration-75 bg-transparent rounded-md group-hover:bg-opacity-0 flex items-center">
                 Portfolio
@@ -107,6 +108,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-blue-500"
+              aria-label="Visit Ashik Ibrahim's LinkedIn profile"
             >
               <FaLinkedin size={30} />
             </a>
@@ -115,12 +117,14 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-400"
+              aria-label="Visit Ashik Ibrahim's GitHub profile"
             >
               <FaGithub size={30} />
             </a>
             <a
               href="mailto:ashikibrahim7777@gmail.com"
               className="text-white hover:text-yellow-500"
+              aria-label="Send an email to Ashik Ibrahim"
             >
               <CiMail size={30} />
             </a>
