@@ -15,7 +15,7 @@ function App() {
     <div
       className="min-h-screen bg-cover bg-center"
       style={{
-        backgroundImage: `url('bg-img.png')`,
+        backgroundImage: `url('/bg-img.png')`,
       }}
     >
       <Suspense fallback={<Loading />}>

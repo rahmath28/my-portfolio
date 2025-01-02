@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import { LiaTimesSolid } from "react-icons/lia";
 import { HiBars3 } from "react-icons/hi2";
 import { Link } from "react-scroll";
@@ -31,7 +30,7 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-inherit">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-white fixed z-20  backdrop-blur-md">
       <div>
         <h1 className="sm:text-4xl ml-2 font-signature text-2xl cursor-pointer">
           Ashik
@@ -51,7 +50,7 @@ const NavBar = () => {
               className="inline-block relative"
             >
               {link}
-              <span className="absolute bottom-0 left-0 h-0.5 bg-gray-500 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 w-full"></span>
+              <span className="absolute bottom-0 left-0 h-0.5 bg-purple-500 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 w-full"></span>
             </Link>
           </li>
         ))}

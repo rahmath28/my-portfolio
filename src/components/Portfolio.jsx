@@ -162,7 +162,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div name="portfolio" className="w-full text-white text-center">
+    <div name="portfolio" className="w-full text-white text-center pt-[80px]">
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
@@ -188,7 +188,7 @@ const Portfolio = () => {
                 <img
                   src={src}
                   alt={title}
-                  className="rounded-t-md duration-200 hover:scale-105 h-auto"
+                  className="rounded-t-md duration-200 hover:scale-95 h-auto"
                 />
 
                 <h3 className="text-lg text-center mt-2 font-bold">{title}</h3>
@@ -197,9 +197,16 @@ const Portfolio = () => {
                   {description}
                 </p>
 
-                <p className="text-center mt-2 text-sm font-semibold text-white-500">
-                  {technologies.join(", ")}
-                </p>
+                <div className="flex flex-wrap justify-center gap-2 mt-2">
+                  {technologies.map((tech, index) => (
+                    <span
+                      key={index}
+                      className="px-3 py-1 bg-gray-700 text-gray-100 text-xs font-medium rounded-full"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
 
                 <div className="flex flex-row items-center justify-center mt-2 gap-2">
                   <a
@@ -208,7 +215,7 @@ const Portfolio = () => {
                     rel="noopener noreferrer"
                     className="w-auto sm:w-1/2 px-2 py-1 sm:px-6 sm:py-3 m-2 duration-200 hover:scale-105 flex items-center justify-center gap-2 border border-gray-300 sm:border-2 rounded-lg transform transition-transform hover:shadow-lg hover:shadow-gray-600"
                   >
-                    <FaExternalLinkAlt /> Demo
+                    <FaExternalLinkAlt /> Visit Site
                   </a>
                   <a
                     href={code}

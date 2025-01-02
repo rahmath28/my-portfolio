@@ -105,7 +105,7 @@ const Experience = () => {
   return (
     <div
       name="experience"
-      className="w-full min-h-screen mt-8 text-center cursor-pointer"
+      className="w-full min-h-screen mt-8 text-center cursor-pointer pt-[80px]"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <motion.div

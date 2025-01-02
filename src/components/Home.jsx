@@ -1,4 +1,5 @@
 import React from "react";
+
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
@@ -28,7 +29,7 @@ const Home = () => {
       variants={animationVariants}
       className="h-screen w-full"
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row pt-[80px]">
         <div className="flex flex-col justify-center h-full">
           <motion.p
             variants={animationVariants}

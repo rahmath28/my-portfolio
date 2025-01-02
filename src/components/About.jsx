@@ -12,7 +12,7 @@ const About = () => {
   const { ref, controls } = useScrollAnimation();
 
   return (
-    <div name="about" className="w-full text-white text-center">
+    <div name="about" className="w-full text-white text-center pt-[80px]">
       <motion.div
         ref={ref}
         initial="hidden"
