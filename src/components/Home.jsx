@@ -34,24 +34,36 @@ const Home = () => {
           <motion.p
             variants={animationVariants}
             className="text-sm sm:text-sm font-bold text-gray-300 text-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
           >
             Hello, I'm
           </motion.p>
           <motion.h2
             variants={animationVariants}
             className="text-4xl sm:text-7xl font-bold text-white py-2 text-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
           >
             Ashik Ibrahim
           </motion.h2>
           <motion.h3
             variants={animationVariants}
             className="text-xl sm:text-4xl font-bold text-white py-4 text-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
           >
             FrontEnd Developer
           </motion.h3>
           <motion.p
             variants={animationVariants}
             className="text-white py-4 max-w-screen-md md:text-lg text-sm text-justify"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
           >
             I have 2 years of hands-on experience in building and designing
             websites. Currently, I am passionate about working on web
@@ -65,6 +77,9 @@ const Home = () => {
           <motion.div
             variants={animationVariants}
             className="flex justify-center space-x-4 mb-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
           >
             <a
               href="/Ashik_Ibrahim_React_Developer_Resume.pdf"
