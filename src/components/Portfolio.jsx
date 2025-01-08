@@ -32,7 +32,7 @@ const Portfolio = () => {
       id: 1,
       title: "Wild Oasis",
       description:
-        "A nature-themed app for managing cabin bookings at a wildlife resort. It includes an admin dashboard for adding cabins, handling check-ins, and creating user accounts for employees.",
+        "A nature-themed app for managing cabin bookings at a wildlife resort. It includes an admin dashboard for adding cabins, handling check-ins, and managing employee user accounts.",
       src: wild_oasis,
       demo: "https://wild-oasis-by-ashik.vercel.app/",
       code: "https://github.com/ashikibrahim07/wild-oasis-by-ashik",
@@ -48,7 +48,7 @@ const Portfolio = () => {
       id: 2,
       title: "Worldwise",
       description:
-        "An interactive map that allows users to explore countries and their demographics. Users can click on countries to view detailed data and explore global information in a visually engaging way.",
+        "An interactive app that allows users to explore cities they’ve visited by clicking on a world map. The app tracks user locations and displays them on the map. highlights user engagement with geographical data.",
       src: worldwise,
       demo: "https://world-wise-plum-psi.vercel.app/",
       code: "https://github.com/ashikibrahim07/world-wise",
@@ -58,7 +58,7 @@ const Portfolio = () => {
       id: 3,
       title: "UsePopcorn",
       description:
-        "A movie discovery app where users can browse movies, view detailed information, and check ratings. The app focuses on providing a seamless movie exploration experience.",
+        "A movie discovery app where users can browse movies, view detailed information, and check ratings. The app focuses on providing a seamless movie exploration experience with movie search and filtering functionality.",
       src: use_popcorn,
       demo: "https://use-popcorn-by-ashik.vercel.app/",
       code: "https://github.com/ashikibrahim07/use-popcorn",
@@ -68,7 +68,7 @@ const Portfolio = () => {
       id: 4,
       title: "Book Store",
       description:
-        "An online store for purchasing books with a fully functional cart and checkout system. It allows users to browse a wide selection of books and manage their purchases effortlessly.",
+        "An online store for purchasing books with a fully functional cart and checkout system. Users can browse and purchase books while managing their orders.this project emphasizes e-commerce functionality and responsive design.",
       src: book_store,
       demo: "https://online-book-store-frontend-beta.vercel.app/",
       code: "https://github.com/ashikibrahim07/book-app-frontend",
@@ -84,7 +84,7 @@ const Portfolio = () => {
       id: 5,
       title: "Pizza Craft",
       description:
-        "A pizza ordering website where users can customize and prioritize their pizzas. They can select different ingredients and create their personalized pizza with ease.",
+        "A pizza ordering app where users can choose their pizzas from different categories. The app allows users to choose and prioritize their pizza choices, offering a smooth and interactive experience.",
       src: pizza_craft,
       demo: "https://pizza-craft.vercel.app/",
       code: "https://github.com/ashikibrahim07/pizza-craft",
@@ -94,7 +94,7 @@ const Portfolio = () => {
       id: 6,
       title: "React IQ",
       description:
-        "A fun quiz app that challenges users' IQ with various questions. The app features a timer and score tracker to make the quiz experience more interactive and competitive.",
+        "A fun and interactive IQ quiz app where users can test their React JS knowledge with various challenging questions. The app features a timer and a score tracker, offering an engaging and competitive quiz experience.",
       src: react_iq,
       demo: "https://react-iq-quiz.vercel.app/",
       code: "https://github.com/ashikibrahim07/react-iq-quiz-app",
@@ -104,7 +104,7 @@ const Portfolio = () => {
       id: 7,
       title: "Prep Trip",
       description:
-        "A trip planning application that helps users organize and track tasks related to their trips. It allows users to add, update, and monitor travel-related activities efficiently.",
+        "A trip planning app that helps users organize and track tasks related to their trips. The app allows users to add, update, and monitor travel-related activities efficiently, simplifying the trip preparation process.",
       src: prep_trip,
       demo: "https://prep-trip.vercel.app/",
       code: "https://github.com/ashikibrahim07/prep-trip",
@@ -114,7 +114,7 @@ const Portfolio = () => {
       id: 8,
       title: "What Todo",
       description:
-        "A task management app designed to help users organize and prioritize their to-do lists. It includes notifications for reminders and an easy-to-use interface for managing daily tasks.",
+        "A task management app designed to help users organize and prioritize their to-do lists. Features include confirmation for check-list, a user-friendly interface, and easy task management.",
       src: what_todo,
       demo: "https://what-todo-v1.vercel.app/",
       code: "https://github.com/ashikibrahim07/what-todo",
@@ -124,7 +124,7 @@ const Portfolio = () => {
       id: 9,
       title: "Rep Set Go",
       description:
-        "A workout tracker that allows users to log exercises, sets, and reps. It provides a simple way to monitor fitness progress and track performance over time.",
+        "A workout tracker that allows users to log exercises, sets, and reps. The app helps users monitor their fitness progress and track performance over time.",
       src: rep_set_go,
       demo: "https://rep-set-go-beta.vercel.app/",
       code: "https://github.com/ashikibrahim07/RepSetGo",
@@ -134,7 +134,7 @@ const Portfolio = () => {
       id: 10,
       title: "Facebook Lite Clone",
       description:
-        "A lightweight replica of Facebook, featuring core functionalities like newsfeed, friend requests, messenger, and notifications. It is designed for fast performance and simplicity",
+        "A lightweight replica of Facebook, featuring core functionalities like newsfeed, friend requests, messenger, and notifications. Designed for fast performance and simplicity.",
       src: fb_lite_clone,
       demo: "https://fb-lite-clone.netlify.app/",
       code: "https://github.com/ashikibrahim07/fb-lite-clone-using-html-css",
