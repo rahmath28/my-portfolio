@@ -60,7 +60,7 @@ const Portfolio = () => {
       description:
         "A movie discovery app where users can browse movies, view detailed information, and check ratings. The app focuses on providing a seamless movie exploration experience.",
       src: use_popcorn,
-      demo: "https://use-popcorn-navy.vercel.app/",
+      demo: "https://use-popcorn-by-ashik.vercel.app/",
       code: "https://github.com/ashikibrahim07/use-popcorn",
       technologies: ["React", "CSS", "React Modal"],
     },
