@@ -4,7 +4,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import { motion } from "framer-motion";
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm(import.meta.env.VITE_FORMSPREE_KEY);
+  const [state, handleSubmit] = useForm("xblolprl"); // import.meta.env.VITE_FORMSPREE_KEY
   const [formData, setFormData] = useState({
     name: "",
     email: "",

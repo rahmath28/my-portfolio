@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-
-import wild_oasis from "../assets/portfolio/wild_oasis.png";
-import pizza_craft from "../assets/portfolio/pizza_craft.png";
-import use_popcorn from "../assets/portfolio/use_popcorn.png";
-import worldwise from "../assets/portfolio/worldwise.png";
-import book_store from "../assets/portfolio/book_store.png";
-import react_iq from "../assets/portfolio/react_iq.png";
-import prep_trip from "../assets/portfolio/prep_trip.png";
+import movie_Finder from "../assets/portfolio/projects/mf.jpg";
+import git_Finder from "../assets/portfolio/projects/git.jpg";
+import Chucknoris_Jokes from "../assets/portfolio/projects/jokes.jpg";
+import money_tracker from "../assets/portfolio/projects/mtracker.jpg";
+import book_way from "../assets/portfolio/projects/bookway.jpg";
+import review_app from "../assets/portfolio/projects/rview.jpg";
+import ecommerce from  "../assets/portfolio/projects/ecom.png";
 import what_todo from "../assets/portfolio/what_todo.png";
 import rep_set_go from "../assets/portfolio/rep_set_go.png";
 import fb_lite_clone from "../assets/portfolio/fb_lite_clone.png";
@@ -30,116 +29,110 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      title: "Wild Oasis",
+      title: "Movie Finder",
       description:
-        "A nature-themed app for managing cabin bookings at a wildlife resort. It includes an admin dashboard for adding cabins, handling check-ins, and managing employee user accounts.",
-      src: wild_oasis,
-      demo: "https://wild-oasis-by-ashik.vercel.app/",
-      code: "https://github.com/ashikibrahim07/wild-oasis-by-ashik",
+        "A Movie Finder app utilizing the TMDB API to fetch and display Top Rated, Popular, and Upcoming movies. It features a search functionality for dynamic content filtering and real-time data updates.",
+      src: movie_Finder,
+      demo: "https://moviefinder01.netlify.app/",
+      code: "https://github.com/rahmath28/Movie-Finder.git",
       technologies: [
         "React",
-        "Styled Components",
-        "Redux",
-        "React Query",
-        "Supabase",
+        "Tailwind CSS",
+        "Flowbite"
       ],
     },
     {
       id: 2,
-      title: "Worldwise",
+      title: "Git Finder ",
       description:
-        "An interactive app that allows users to explore cities they’ve visited by clicking on a world map. The app tracks user locations and displays them on the map. highlights user engagement with geographical data.",
-      src: worldwise,
-      demo: "https://world-wise-plum-psi.vercel.app/",
-      code: "https://github.com/ashikibrahim07/world-wise",
-      technologies: ["React", "CSS Modules", "React Leaflet"],
+        "A Git Finder app that fetches GitHub user details, including repositories, avatar, and full profile information. It allows users to view detailed stats and navigate directly to the user's GitHub profile for exploration.",
+      src: git_Finder ,
+      demo: "https://gitfinder01.netlify.app/",
+      code: "https://github.com/rahmath28/git-finder.git",
+      technologies: ["HTML", "Javascript", "Bootstrap"],
     },
     {
       id: 3,
-      title: "UsePopcorn",
+      title: "Money tracker",
       description:
-        "A movie discovery app where users can browse movies, view detailed information, and check ratings. The app focuses on providing a seamless movie exploration experience with movie search and filtering functionality.",
-      src: use_popcorn,
-      demo: "https://use-popcorn-by-ashik.vercel.app/",
-      code: "https://github.com/ashikibrahim07/use-popcorn",
-      technologies: ["React", "CSS", "React Modal"],
+        "A Money Tracker app that allows users to track expenses, add details, and calculate total spending. Users can edit, update, and remove transactions, with an option to clear all data for easy management.",
+      src: money_tracker,
+      demo: "",
+      code: "https://github.com/rahmath28/money-tracker.git",
+      technologies: ["HTML", "Materialize - CSS", "Javascript"],
     },
     {
       id: 4,
-      title: "Book Store",
+      title: "Chucknoris Jokes ",
       description:
-        "An online store for purchasing books with a fully functional cart and checkout system. Users can browse and purchase books while managing their orders.this project emphasizes e-commerce functionality and responsive design.",
-      src: book_store,
-      demo: "https://online-book-store-frontend-beta.vercel.app/",
-      code: "https://github.com/ashikibrahim07/book-app-frontend",
+        "A Chuck Norris Jokes app using the Chuck Norris API that displays random jokes initially. Users can select a category to generate jokes accordingly, ensuring a fun experience withdynamic content updates.",
+      src: Chucknoris_Jokes,
+      demo: "https://chucknori-jokes-app.netlify.app/",
+      code: "https://github.com/rahmath28/chucknoris-api.git",
       technologies: [
-        "React",
-        "Tailwind CSS",
-        "MongoDB",
-        "Node JS",
-        "Express.js",
+        "HTML", "Bootstrap", "Javascript"
       ],
     },
     {
       id: 5,
-      title: "Pizza Craft",
+      title: "Book Way",
       description:
-        "A pizza ordering app where users can choose their pizzas from different categories. The app allows users to choose and prioritize their pizza choices, offering a smooth and interactive experience.",
-      src: pizza_craft,
-      demo: "https://pizza-craft.vercel.app/",
-      code: "https://github.com/ashikibrahim07/pizza-craft",
-      technologies: ["React", "Tailwind CSS", "Redux"],
+        "A Book Management Page where users can store book titles, author names, and ISBNs. It allows users to view, delete, and manage books efficiently, with an option to clear all entries easily.",
+      src: book_way,
+      demo: "https://bookway01.netlify.app/",
+      code: "https://github.com/rahmath28/book-way.git",
+      technologies: ["HTML", "Bootstrap", "Javascript"],
     },
     {
       id: 6,
-      title: "React IQ",
+      title: "Review App",
       description:
-        "A fun and interactive IQ quiz app where users can test their React JS knowledge with various challenging questions. The app features a timer and a score tracker, offering an engaging and competitive quiz experience.",
-      src: react_iq,
-      demo: "https://react-iq-quiz.vercel.app/",
+        "A Feedback Review app with full CRUD functionalities, allowing users to add, view, update, and delete feedback. Data is stored in a JSON server, ensuring persistent storage and seamless user interaction.",
+      src: review_app,
+      demo: "",
       code: "https://github.com/ashikibrahim07/react-iq-quiz-app",
       technologies: ["React", "CSS"],
     },
     {
       id: 7,
-      title: "Prep Trip",
+      title: "Ecommerce",
       description:
-        "A trip planning app that helps users organize and track tasks related to their trips. The app allows users to add, update, and monitor travel-related activities efficiently, simplifying the trip preparation process.",
-      src: prep_trip,
-      demo: "https://prep-trip.vercel.app/",
-      code: "https://github.com/ashikibrahim07/prep-trip",
-      technologies: ["React", "CSS"],
+        "Built an e-commerce project using the MERN stack, creating schemas to seed mock data into MongoDB. Integrated Redux for efficient state management and successfully fetched and displayed individual product details. Implemented product selection with quantity control and generated a dynamic product summary view.",
+      src: ecommerce,
+      demo: "",
+      code: "https://github.com/rahmath28/e-commerce.git",
+      technologies: ["React","Redux", "Daisy UI", "Mongo DB"],
     },
-    {
-      id: 8,
-      title: "What Todo",
-      description:
-        "A task management app designed to help users organize and prioritize their to-do lists. Features include confirmation for check-list, a user-friendly interface, and easy task management.",
-      src: what_todo,
-      demo: "https://what-todo-v1.vercel.app/",
-      code: "https://github.com/ashikibrahim07/what-todo",
-      technologies: ["React", "CSS", "Sweet Alert2"],
-    },
-    {
-      id: 9,
-      title: "Rep Set Go",
-      description:
-        "A workout tracker that allows users to log exercises, sets, and reps. The app helps users monitor their fitness progress and track performance over time.",
-      src: rep_set_go,
-      demo: "https://rep-set-go-beta.vercel.app/",
-      code: "https://github.com/ashikibrahim07/RepSetGo",
-      technologies: ["React", "CSS"],
-    },
-    {
-      id: 10,
-      title: "Facebook Lite Clone",
-      description:
-        "A lightweight replica of Facebook, featuring core functionalities like newsfeed, friend requests, messenger, and notifications. Designed for fast performance and simplicity.",
-      src: fb_lite_clone,
-      demo: "https://fb-lite-clone.netlify.app/",
-      code: "https://github.com/ashikibrahim07/fb-lite-clone-using-html-css",
-      technologies: ["HTML", "CSS"],
-    },
+    // {
+    //   id: 8,
+    //   title: "What Todo",
+    //   description:
+    //     "A task management app designed to help users organize and prioritize their to-do lists. Features include confirmation for check-list, a user-friendly interface, and easy task management.",
+    //   src: what_todo,
+    //   demo: "https://what-todo-v1.vercel.app/",
+    //   code: "https://github.com/ashikibrahim07/what-todo",
+    //   technologies: ["React", "CSS", "Sweet Alert2"],
+    // },
+    // {
+    //   id: 9,
+    //   title: "Rep Set Go",
+    //   description:
+    //     "A workout tracker that allows users to log exercises, sets, and reps. The app helps users monitor their fitness progress and track performance over time.",
+    //   src: rep_set_go,
+    //   demo: "https://rep-set-go-beta.vercel.app/",
+    //   code: "https://github.com/ashikibrahim07/RepSetGo",
+    //   technologies: ["React", "CSS"],
+    // },
+    // {
+    //   id: 10,
+    //   title: "Facebook Lite Clone",
+    //   description:
+    //     "A lightweight replica of Facebook, featuring core functionalities like newsfeed, friend requests, messenger, and notifications. Designed for fast performance and simplicity.",
+    //   src: fb_lite_clone,
+    //   demo: "https://fb-lite-clone.netlify.app/",
+    //   code: "https://github.com/ashikibrahim07/fb-lite-clone-using-html-css",
+    //   technologies: ["HTML", "CSS"],
+    // },
   ];
 
   const itemVariant = {
@@ -215,7 +208,7 @@ const Portfolio = () => {
                     rel="noopener noreferrer"
                     className="w-auto sm:w-1/2 px-2 py-1 sm:px-6 sm:py-3 m-2 duration-200 hover:scale-105 flex items-center justify-center gap-2 border border-gray-300 sm:border-2 rounded-lg transform transition-transform hover:shadow-lg hover:shadow-gray-600"
                   >
-                    <FaExternalLinkAlt /> Visit Site
+                    <FaExternalLinkAlt /> Visit
                   </a>
                   <a
                     href={code}

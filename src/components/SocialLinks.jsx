@@ -12,7 +12,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://www.linkedin.com/in/ashik-ibrahim-s/",
+      href: "https://www.linkedin.com/in/rahmath-689385326/",
       style: "rounded-tr-md",
     },
     {
@@ -22,7 +22,7 @@ const SocialLinks = () => {
           GitHub <FaGithub size={30} />
         </>
       ),
-      href: "https://github.com/ashikibrahim07",
+      href: "https://github.com/rahmath28",
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const SocialLinks = () => {
           Mail <CiMail size={30} />
         </>
       ),
-      href: "mailto:ashikibrahim7777@gmail.com",
+      href: "mailto:rahmath8525@gmail.com",
     },
   ];
 

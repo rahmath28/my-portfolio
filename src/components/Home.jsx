@@ -47,7 +47,7 @@ const Home = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            Ashik Ibrahim
+            Rahmathullah
           </motion.h2>
           <motion.h3
             variants={animationVariants}
@@ -65,13 +65,7 @@ const Home = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            I have 2 years of hands-on experience in building and designing
-            websites. Currently, I am passionate about working on web
-            applications using technologies such as{" "}
-            <span className="font-bold">React</span>,{" "}
-            <span className="font-bold">Tailwind</span>,{" "}
-            <span className="font-bold">Redux</span>, and{" "}
-            <span className="font-bold">React Query</span>.
+           Passionate about building dynamic, user-friendly web applications with a foundational understanding ofcloud computing and AWS. Always eager to learn and adapt to new technologiesto create innovative solutions.
           </motion.p>
 
           <motion.div
@@ -81,13 +75,13 @@ const Home = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            <a
-              href="/Ashik_Ibrahim_React_Developer_Resume.pdf"
+             <a
+              href="/Rahmathullah_S_CV.pdf"
               target="_blank"
               className="relative inline-flex items-center justify-center p-1 mb-2 overflow-hidden text-sm font-medium text-white rounded-lg group 
     border-2 border-[#2D2A6A] bg-gradient-to-br from-[#2D2A6A] to-[#4B0082] 
     focus:outline-none"
-              aria-label="Download Ashik Ibrahim's Resume"
+              aria-label="Download Rahmath's Resume"
             >
               <span className="relative px-4 py-2 transition-all ease-in duration-75 bg-transparent rounded-md group-hover:bg-opacity-0 flex items-center">
                 Resume
@@ -120,27 +114,28 @@ const Home = () => {
             className="flex justify-center space-x-4 lg:hidden"
           >
             <a
-              href="https://www.linkedin.com/in/ashik-ibrahim-s/"
+              // href="https://www.linkedin.com/in/ashik-ibrahim-s/"
+              href="http://linkedin.com/in/rahmath-689385326"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-blue-500"
-              aria-label="Visit Ashik Ibrahim's LinkedIn profile"
+              aria-label="Visit Rahmathullah's LinkedIn profile"
             >
               <FaLinkedin size={30} />
             </a>
             <a
-              href="https://github.com/ashikibrahim07"
+              href="https://github.com/rahmath28"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-400"
-              aria-label="Visit Ashik Ibrahim's GitHub profile"
+              aria-label="Visit Rahmathullah's GitHub profile"
             >
               <FaGithub size={30} />
             </a>
             <a
-              href="mailto:ashikibrahim7777@gmail.com"
+              href="mailto:rahmath8525@gmail.com"
               className="text-white hover:text-yellow-500"
-              aria-label="Send an email to Ashik Ibrahim"
+              aria-label="Send an email to Rahmathullah"
             >
               <CiMail size={30} />
             </a>

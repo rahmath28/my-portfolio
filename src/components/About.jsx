@@ -27,22 +27,10 @@ const About = () => {
         </div>
 
         <p className="sm:text-xl text-sm text-justify">
-          I am a recent Computer Science Master's graduate, specializing in{" "}
-          <span className="font-bold">front-end development</span> and the{" "}
-          <span className="font-bold">PERN</span> stack. Throughout my academic
-          career, I have focused on modern web development and enhanced my
-          proficiency in <span className="font-bold">HTML</span>,{" "}
-          <span className="font-bold">CSS</span>,{" "}
-          <span className="font-bold">JavaScript</span>,{" "}
-          <span className="font-bold">React.js</span>,{" "}
-          <span className="font-bold">Redux</span>,{" "}
-          <span className="font-bold">Tailwind</span>, and{" "}
-          <span className="font-bold">Node.js</span>. I have also gained
-          experience working with <span className="font-bold">PostgreSQL</span>{" "}
-          databases, where I created complex data models and leveraged{" "}
-          <span className="font-bold">Express.js</span> for server-side
-          development. With a solid foundation in computer science and a passion
-          for creating intuitive user interfaces, I am eager to apply my skills
+          Front-End Developer & Cloud Enthusiast with expertise in web technologies and AWS Cloud (Basics).
+          Skilled in responsive UI development and creating seamless user experiences. Experienced in building dynamic
+          web applications with modern technologies. Passionate about exploring cloud computing and
+          its integration with web solutions. Always eager to learn, adapt, and innovate in the ever-evolving tech landscape. I am eager to apply my skills
           to innovative projects that challenge the limits of technology.
         </p>
       </motion.div>

@@ -52,15 +52,12 @@ const Footer = () => {
       <Tooltip id="back-to-top" place="top" effect="solid" />
       <footer className="text-white text-center py-4 sm:text-lg text-sm">
         <p>
-          Coded in <span className="font-bold">Visual Studio Code</span>. Built
-          with <span className="font-bold">React.js</span>,{" "}
-          <span className="font-bold">Tailwind CSS</span>, and{" "}
-          <span className="font-bold">Framer Motion</span>. Deployed with{" "}
-          <span className="font-bold">Vercel</span>.
+          Coded in <span className="font-bold">Visual Studio Code</span>. Deployed with
+          <span className="font-bold"> Netlify</span>.
         </p>
         <p className="mt-2">
           Crafted with care by{" "}
-          <span className="font-bold cursor-pointer">Ashik Ibrahim</span>.
+          <span className="font-bold cursor-pointer">Rahmathullah</span>.
         </p>
       </footer>
     </div>

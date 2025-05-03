@@ -6,14 +6,16 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
+import bootstrap from "../assets/bootstrap.png";
 import tailwind from "../assets/tailwind.png";
 import redux from "../assets/icon_redux.png";
-import react_query from "../assets/reactquery-color.svg";
 import github from "../assets/github.png";
 import node from "../assets/node.png";
 import expressJS from "../assets/express-js.png";
-import postgresql from "../assets/postgresql-color.svg";
 import mongodb from "../assets/mongodb-color.svg";
+import python from "../assets/python.webp";
+import cc from "../assets/cc.png";
+import aws from "../assets/aws-cloud.png";
 
 const Experience = () => {
   const techs = [
@@ -43,22 +45,23 @@ const Experience = () => {
     },
     {
       id: 5,
+      src: bootstrap,
+      title: "Bootstrap",
+      style: "shadow-gray-500 hover:shadow-sky-400",
+    },
+    {
+      id: 6,
       src: tailwind,
       title: "Tailwind",
       style: "shadow-gray-500 hover:shadow-sky-400",
     },
     {
-      id: 6,
+      id: 7,
       src: redux,
       title: "Redux",
       style: "shadow-gray-500 hover:shadow-purple-600",
     },
-    {
-      id: 7,
-      src: react_query,
-      title: "React Query",
-      style: "shadow-gray-500 hover:shadow-red-600",
-    },
+  
     {
       id: 8,
       src: github,
@@ -77,18 +80,36 @@ const Experience = () => {
       title: "Express JS",
       style: "shadow-gray-500 hover:shadow-white",
     },
+    // {
+    //   id: 12,
+    //   src: postgresql,
+    //   title: "PostgreSQL",
+    //   style: "shadow-gray-500 hover:shadow-blue-500",
+    // },
     {
       id: 11,
-      src: postgresql,
-      title: "PostgreSQL",
-      style: "shadow-gray-500 hover:shadow-blue-500",
-    },
-    {
-      id: 12,
       src: mongodb,
       title: "MongoDB",
       style: "shadow-gray-500 hover:shadow-green-600",
     },
+    {
+      id: 12,
+      src: python,
+      title: "Python",
+      style: "shadow-gray-500 hover:shadow-green-600",
+    },
+    {
+      id: 13,
+      src: cc,
+      title: "Cloud Computing",
+      style: "shadow-gray-500 hover:shadow-green-600 ",
+    },
+    {
+      id: 14,
+      src: aws,
+      title: "AWS - Cloud",
+      style: "shadow-gray-500 hover:shadow-green-600 ",
+    }
   ];
 
   const { ref, controls } = useScrollAnimation();
@@ -136,8 +157,9 @@ const Experience = () => {
               }}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style} transition-shadow`}
             >
-              <img src={src} alt={title} className="w-20 mx-auto" />
-              <p className="mt-4">{title}</p>
+              <img src={src} alt={title} className={`w-20 mx-auto ${title === "Cloud Computing" ? "invert" : ""}`} />
+
+              <p className="mt-4 text-white">{title}</p>
             </motion.div>
           ))}
         </div>
