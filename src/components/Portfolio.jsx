@@ -89,7 +89,7 @@ const Portfolio = () => {
       description:
         "A Feedback Review app with full CRUD functionalities, allowing users to add, view, update, and delete feedback. Data is stored in a JSON server, ensuring persistent storage and seamless user interaction.",
       src: review_app,
-      demo: "",
+      demo: "https://review-app01.netlify.app/",
       code: "https://github.com/ashikibrahim07/react-iq-quiz-app",
       technologies: ["React", "CSS"],
     },
